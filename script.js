@@ -8,7 +8,8 @@ function threeSum(arr, target) {
 	  for(let k=j+1; k<arr.length; k++) {
 		sum = arr[i]+arr[j]+arr[k];
 		if(Math.abs(sum-target)<minDiff) {
-			closest= sum;
+			closest = sum;
+			minDiff = sum-target;
 		}
 	  }
 	}
