@@ -9,7 +9,7 @@ function threeSum(arr, target) {
 		sum = arr[i]+arr[j]+arr[k];
 		if(Math.abs(sum-target)<minDiff) {
 			closest = sum;
-			minDiff = sum-target;
+			minDiff = Math.abs(sum-target);
 		}
 	  }
 	}
